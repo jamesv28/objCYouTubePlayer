@@ -15,6 +15,7 @@
 		AA364F051EA415C900AD7E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA364F031EA415C900AD7E2D /* LaunchScreen.storyboard */; };
 		AA364F101EA415C900AD7E2D /* YouTubePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA364F0F1EA415C900AD7E2D /* YouTubePlayerTests.m */; };
 		AA364F1B1EA415C900AD7E2D /* YouTubePlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA364F1A1EA415C900AD7E2D /* YouTubePlayerUITests.m */; };
+		AA364F2B1EA4167100AD7E2D /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = AA364F2A1EA4167100AD7E2D /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		AA364F161EA415C900AD7E2D /* YouTubePlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubePlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA364F1A1EA415C900AD7E2D /* YouTubePlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubePlayerUITests.m; sourceTree = "<group>"; };
 		AA364F1C1EA415C900AD7E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA364F291EA4167100AD7E2D /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		AA364F2A1EA4167100AD7E2D /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		AA364EF41EA415C800AD7E2D /* YouTubePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				AA364F281EA4163B00AD7E2D /* services */,
 				AA364EF81EA415C800AD7E2D /* AppDelegate.h */,
 				AA364EF91EA415C800AD7E2D /* AppDelegate.m */,
 				AA364EFB1EA415C800AD7E2D /* ViewController.h */,
@@ -138,6 +142,15 @@
 				AA364F1C1EA415C900AD7E2D /* Info.plist */,
 			);
 			path = YouTubePlayerUITests;
+			sourceTree = "<group>";
+		};
+		AA364F281EA4163B00AD7E2D /* services */ = {
+			isa = PBXGroup;
+			children = (
+				AA364F291EA4167100AD7E2D /* HTTPService.h */,
+				AA364F2A1EA4167100AD7E2D /* HTTPService.m */,
+			);
+			name = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA364EFD1EA415C800AD7E2D /* ViewController.m in Sources */,
+				AA364F2B1EA4167100AD7E2D /* HTTPService.m in Sources */,
 				AA364EFA1EA415C800AD7E2D /* AppDelegate.m in Sources */,
 				AA364EF71EA415C800AD7E2D /* main.m in Sources */,
 			);
